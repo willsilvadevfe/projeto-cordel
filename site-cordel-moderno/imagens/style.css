@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+/* fontes Sriracha paragrafos & Eastman Header */
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@font-face {
+    font-family: 'Eastman';
+    src: url('Eastman.otf') format('opentype');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 280px;
+    
+}
+
+header > h1 {
+    font-family: 'Eastman', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size:8em;
+    height: 10px;
+    color: white;
+    padding-top: 20px;
+    font-variant: small-caps;
+}
+
+header > p {
+    margin-top: 0px;
+    padding-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 30px;
+    color: white;
+    margin-bottom: 40px;
+    
+}
+
+header > p > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header > p > a:hover {
+    text-decoration: underline;
+}
+
+main > section > p {
+    font-family: 'Sriracha', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3.3em;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.abelha {
+    background-image: url(background001.jpg);
+    background-size: cover;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    
+}
+
+main > .abelha > p {
+    background-color: rgba(0, 0, 0, 0.322);
+    width: 700px;
+    padding: 10px;
+    border-radius: 20px;
+    text-shadow: 4px 4px 10px black;
+}
+ 
+.cartas {
+    background-image: url(background002.jpg);
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    
+}
+
+main > .cartas > p {
+    background-color: rgba(0, 0, 0, 0.322);
+    width: 700px;
+    padding: 10px;
+    text-shadow: 4px 4px 10px black;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 0.5px 0px;
+    text-align: center;
+    margin-top: 90px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer p a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/* MEDIA SCREEN - RESPONSIVIDADE VIEWPORT */
+
+@media screen and (max-width: 1000px) {
+    header > h1 {
+        font-size: 7em;
+    }
+
+    main > section > p {
+        font-size: 3em;
+    }
+
+    .abelha {
+        background-size: cover;
+        opacity: 1;
+        
+    }
+
+    .cartas {
+        background-size: cover;
+        opacity: 1;
+        
+        
+    }
+}
+
+@media screen and (max-width: 850px) {
+    header > h1 {
+        font-size: 6em;
+    }
+
+    main > section > p {
+        font-size: 2.5em;
+    }
+
+    .abelha {
+        background-size: cover;
+        opacity: 0.95;
+        
+    }
+
+    .cartas {
+        background-size: cover;
+        opacity: 0.95;
+        
+        
+    }
+
+    main > .abelha > p {
+        width: 600px;
+    }
+
+    main > .cartas > p {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header > h1 {
+        font-size: 5em;
+    }
+
+    main > section > p {
+        font-size: 2em;
+    }
+
+    .abelha {
+        background-size: cover;
+        opacity: 0.9;
+        
+    }
+
+    .cartas {
+        background-size: cover;
+        opacity: 0.9;
+        
+       
+    }
+
+    main > .abelha > p {
+        width: 450px;
+    }
+
+    main > .cartas > p {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header > h1 {
+        font-size: 3.5em;
+    }
+
+    header > p {
+        font-size: 12px;
+    }
+
+    main > section > p {
+        font-size: 1.5em;
+    }
+
+    .abelha {
+        background-size: cover;
+        
+        
+    }
+
+    .cartas {
+        background-size: cover;
+        background-position: right center;
+    }
+
+    main > .abelha > p {
+        width: 300px;
+        
+    }
+
+    main > .cartas > p {
+        width: 300px;
+    }
+
+    footer > p {
+        font-size: 0.9em;
+    }
+}
+
+
+
